@@ -19,7 +19,7 @@ class BooksForm extends Component {
     this.state = {
       id: Math.floor(Math.random() * 500),
       title: '',
-      category: '',
+      category: 'Action',
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -48,7 +48,6 @@ class BooksForm extends Component {
       createBook(this.state);
     }
     document.getElementById('inputTitle').value = '';
-    document.getElementById('selectOpt').value = 'Action';
   }
 
   render() {

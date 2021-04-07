@@ -3,7 +3,7 @@ import bookReducer from './books';
 import filterReducer from './filter';
 
 const rootReducer = combineReducers({
-  book: bookReducer,
+  books: bookReducer,
   filter: filterReducer,
 });
 

@@ -16,11 +16,7 @@ const CategoryFilter = props => {
 
   const handleClick = event => {
     const { value } = event.target;
-    if (value === 'All') {
-      handleFilter(null);
-    } else {
-      handleFilter(value);
-    }
+    handleFilter(value);
   };
 
   return (
