@@ -1,11 +1,29 @@
 import { CREATE_BOOK, REMOVE_BOOK } from '../actions/index';
 
-const bookReducer = (state = [], action) => {
+const initialState = [
+  {
+    id: Math.floor(Math.random() * 50),
+    title: 'Encarter Dictionary',
+    category: 'Kids',
+  },
+  {
+    id: Math.floor(Math.random() * 50),
+    title: 'Senior Secondary Physics',
+    category: 'Learning',
+  },
+  {
+    id: Math.floor(Math.random() * 50),
+    title: 'Things Fall Appart',
+    category: 'History',
+  },
+];
+
+const bookReducer = (state = initialState, action) => {
   switch (action.type) {
     case CREATE_BOOK:
-      return { books: [...state.books, action.book] };
+      return [...state, action.book];
     case REMOVE_BOOK:
-      return { books: state.books.filter(book => book.id !== action.book.id) };
+      return state.filter(book => book.id !== action.book.id);
     default:
       return state;
   }

@@ -9,7 +9,14 @@ This entails setting up and arranging files and directories used in this project
 
 ### Milestone 3
 In this milestone, i connected the Remove_Book action to the redux store.
-I implemented, redux actions to handle creating new book and removing books from the application. Remove Book button is now displayed next to each book row in the BooksList component.
+I implemented redux actions to handle creating new book and removing books from the application. Remove Book button is now displayed next to each book row in the BooksList component.
+
+### Milestone 4
+In this milestone, I implemented the following;
+- Created CHANGE_FILTER action
+- Implemented the filter reducer
+- Implemented the CategoryFilter component
+- Implemented processes to keep the filter value in the redux store.
 
 ## Preview
 
@@ -51,10 +58,6 @@ npm start
 Launch live version.
 - [Launch App](https://zubenna-bookstore.herokuapp.com/)
 
-## Testing
-
-## Run Test
-
 ## Built With
 - React.js
 - JavaScript
@@ -80,4 +83,4 @@ Kindly star ⭐️ this project, if you like it!
 - [Microverse](https://www.microverse.org/)
 
 ## 📝 License
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](LICENSE) licensed.
