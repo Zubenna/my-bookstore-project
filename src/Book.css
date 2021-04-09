@@ -1,0 +1,124 @@
+.book-holder {
+  height: 16rem;
+  position: relative;
+}
+
+.per-book-holder {
+  height: 170px;
+  width: 50rem;
+  margin: 0 auto 1rem auto;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.book-cat {
+  color:#121212;
+  margin-bottom: 0.5rem;
+  font-size: 14px;
+  opacity: 0.7;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-transform: capitalize;
+}
+
+.book-title {
+  font-family: 'Gill Sans MT';
+  opacity: 0.9;
+  font-size: 22px;
+  letter-spacing: -0.2px;
+  margin: 0;
+}
+
+.book-title,
+.book-author,
+.comp-text,
+.percent,
+.comment,
+.book-edit button,
+.edit  {
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+}
+
+.book-author,
+.book-edit p,
+.book-edit button {
+  font-family: 'RobotoSlab', 'Gill Sans MT';
+  font-size: 14px;
+  font-weight: 300;
+  color: #4386bf;
+}
+
+.book-edit {
+  display: flex;
+  position: absolute;
+  left: 15rem;
+  bottom: 27px;
+  width: 27rem;
+}
+
+.book-edit .comment {
+  padding-right: 1rem;
+  cursor: pointer;
+}
+
+.book-edit .edit {
+  position: relative;
+  cursor: pointer;
+  left: 1rem;
+}
+
+.book-edit button {
+  height: 1rem;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 0.8rem;
+  padding: 0 1rem 0 1rem;
+  border-left: 1px solid #bfd6eb;
+  border-right: 1px solid #bfd6eb;
+}
+
+.perc-complt {
+  display: flex;
+  position: absolute;
+  left: 40rem;
+  bottom: 7rem;
+}
+
+.percent-box {
+  margin-left: 1rem;
+}
+
+.percent-box p,
+.prog-button p {
+  margin: 0;
+}
+
+.percent {
+  font-size: 32px;
+  color: #121212;
+  padding-top: 0.4rem;
+}
+
+.comp-text {
+  font-size: 14px;
+  color: #121212;
+  opacity: 0.5;
+}
+
+.prog-button {
+  position: absolute;
+  left: 54rem;
+  bottom: 6rem;
+}
+
+.prog-button {
+
+}
+
+
