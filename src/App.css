@@ -53,3 +53,19 @@
   margin-right: 3rem;
   margin-top: 1.5rem;
 }
+
+.filter-book {
+  position: absolute;
+  left: 50rem;
+  font-size: 1.2rem;
+  height: 2rem;
+  color: #888888;
+  font-weight: bold;
+}
+
+#select {
+  height: 3rem;
+  padding: 0.6rem 0;
+  outline: none;
+  font-size: 1.2rem;
+}

@@ -20,7 +20,7 @@ const CategoryFilter = (props) => {
   };
 
   return (
-    <div>
+    <div className="filter-book">
       Filter By Category:
       <select name="category" id="select" onChange={handleClick}>
         {CATEGORIES.map((category) => <option value={category} key={category}>{category}</option>)}
