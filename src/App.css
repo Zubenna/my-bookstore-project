@@ -1,4 +1,71 @@
-
 .App {
-  text-align: center;
+  width: 98.8vw;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #f5f6fa;
+}
+
+.app-title {
+  height: 95px;
+  width: 70rem;
+  background: #fff;
+  margin: 149px 100px 25px 100px;
+  display: flex;
+}
+
+.app-title span {
+  padding: 29px 0 29px 100px;
+  width: 90rem;
+  height: 37px;
+  font-family: 'Montserrat', serif;
+  font-size: 30px;
+  color: #0290ff;
+}
+
+.app-title span,
+.app-title .books {
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.app-title .books {
+  margin: 38px 0 40px 0;
+  color: #121212;
+  font-size: 13px;
+  letter-spacing: 1.9px;
+}
+
+.app-title .catego {
+  margin: 38px 500px 40px 30px;
+  color: #121212;
+  letter-spacing: 1.9px;
+  font-size: 13px;
+}
+
+.app-title img {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 3rem;
+  margin-top: 1.5rem;
+}
+
+.filter-book {
+  position: absolute;
+  left: 50rem;
+  font-size: 1.2rem;
+  height: 2rem;
+  color: #888;
+  font-weight: bold;
+}
+
+#select {
+  height: 3rem;
+  padding: 0.6rem 0;
+  outline: none;
+  font-size: 1.2rem;
 }

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { createBook } from '../actions/index';
+import '../BookForm.css';
 
 const CATEGORIES = [
   'Action',
@@ -20,6 +21,10 @@ class BooksForm extends Component {
       id: Math.floor(Math.random() * 500),
       title: '',
       category: 'Action',
+      currentChap: '',
+      author: '',
+      percentComp: '',
+
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -52,23 +57,24 @@ class BooksForm extends Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <h2>Title</h2>
-        <input type="text" name="title" id="inputTitle" value={this.title} onChange={this.handleChange} />
-        <h2>Category</h2>
-        <select name="category" id="selectOpt" value={this.category} onChange={this.handleChange}>
-          {CATEGORIES.map(category => (
-            <option key={category}>{category}</option>
-          ))}
-        </select>
-        <button type="submit">Submit</button>
+      <form onSubmit={this.handleSubmit} className="panel">
+        <h2 className="add-head">ADD NEW BOOK</h2>
+        <div className="input-box">
+          <input type="text" name="title" placeholder="Book Title" id="inputTitle" value={this.title} onChange={this.handleChange} />
+          <select name="category" id="selectOpt" value={this.category} onChange={this.handleChange}>
+            {CATEGORIES.map((category) => (
+              <option key={category}>{category}</option>
+            ))}
+          </select>
+          <button id="add-book" type="submit">ADD BOOK</button>
+        </div>
       </form>
     );
   }
 }
 
-const mapDispatchToProps = dispatch => ({
-  createBook: book => {
+const mapDispatchToProps = (dispatch) => ({
+  createBook: (book) => {
     dispatch(createBook(book));
   },
 });

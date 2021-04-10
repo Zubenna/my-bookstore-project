@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const CategoryFilter = props => {
+const CategoryFilter = (props) => {
   const CATEGORIES = [
     'All',
     'Action',
@@ -14,16 +14,16 @@ const CategoryFilter = props => {
 
   const { handleFilter } = props;
 
-  const handleClick = event => {
+  const handleClick = (event) => {
     const { value } = event.target;
     handleFilter(value);
   };
 
   return (
-    <div>
+    <div className="filter-book">
       Filter By Category:
       <select name="category" id="select" onChange={handleClick}>
-        {CATEGORIES.map(category => <option value={category} key={category}>{category}</option>)}
+        {CATEGORIES.map((category) => <option value={category} key={category}>{category}</option>)}
       </select>
     </div>
   );

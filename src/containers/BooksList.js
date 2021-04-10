@@ -4,50 +4,49 @@ import { connect } from 'react-redux';
 import Book from '../components/Book';
 import { removeBook, filterOurBook } from '../actions/index';
 import CategoryFilter from '../components/CategoryFilter';
+import login from '../images/login-icon.png';
 
-const BooksList = props => {
+const BooksList = (props) => {
   const { books, filter } = props;
 
-  const handleRemoveBook = book => {
+  const handleRemoveBook = (book) => {
     const { removeBook } = props;
     removeBook(book);
   };
 
-  const handleFilterChange = category => {
+  const handleFilterChange = (category) => {
     const { filterBooks } = props;
     filterBooks(category);
   };
 
-  const filteredBooks = filter === 'All' ? books : books.filter(book => book.category === filter);
+  const filteredBooks = filter === 'All' ? books : books.filter((book) => book.category === filter);
 
   return (
     <div>
+      <div className="app-title">
+        <span>Bookstore CMS</span>
+        <p className="books">BOOKS</p>
+        <p className="catego">CATEGORIES</p>
+        <img src={login} alt="User Login Icon" />
+      </div>
+      {filteredBooks.map(
+        (book) => <Book key={book.id} book={book} removeBtn={handleRemoveBook} />,
+      )}
       <CategoryFilter handleFilter={handleFilterChange} />
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Title</th>
-            <th>Category</th>
-            <th>Remove Option</th>
-          </tr>
-        </thead>
-        {filteredBooks.map(book => <Book key={book.id} book={book} removeBtn={handleRemoveBook} />)}
-      </table>
     </div>
   );
 };
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   books: state.books,
   filter: state.filter,
 });
 
-const mapDispatchToProps = dispatch => ({
-  removeBook: book => {
+const mapDispatchToProps = (dispatch) => ({
+  removeBook: (book) => {
     dispatch(removeBook(book));
   },
-  filterBooks: category => {
+  filterBooks: (category) => {
     dispatch(filterOurBook(category));
   },
 });
