@@ -21,26 +21,14 @@ In this milestone, I implemented the following;
 ### Milestone 5
 In this milestone, I have implemented the UI design of the project using the specific design provided for it. At this time, everything about the frontend design and feature implementation of this project is complete. 
 
-## Preview
-![image](images/bookstore-1.png)
-![image](images/bookstore.png)
-
 ## Main Features
 - User can add a new book
 - User can remove a book
 - User can filter books based on category.
 
-### Milestone 5
-In this milestone, I have implemented the ui design of the project using the specific design provided for it. At this time, everything about the frontend design and feature implementation of this project is complete. 
-
 ## Preview
 ![image](images/bookstore-1.png)
 ![image](images/bookstore.png)
-
-## Main Features
-- User can add new book
-- User can remove book
-- User can filter books based on category.
 
 ## Project SetUp
 Get a local copy of the file. Clone with HTTPS following the steps below.
