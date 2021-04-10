@@ -1,5 +1,5 @@
 # Bookstore CMS Project
-This project entails building the frontend of a Bookstore application. This application helps the user to organize and manage books in their bookstore. The stages of development are covered in the milestone below.
+This project entails building the front end of a Bookstore application. This application helps the user to organize and manage books in their bookstore. The stages of development are covered in the milestone below.
 
 ### Milestone 1
 This involves setting up the project files and directories. Installed all required packages and hosting the app on Heroku.
@@ -8,8 +8,8 @@ This involves setting up the project files and directories. Installed all requir
 This entails setting up and arranging files and directories used in this project. Various components used in this application are implemented as required by the project specification. The components include BookForm, BookList, App, and Book. Reducers and Actions are also implemented. The redux store was also initialized.
 
 ### Milestone 3
-In this milestone, i connected the Remove_Book action to the redux store.
-I implemented redux actions to handle creating new book and removing books from the application. Remove Book button is now displayed next to each book row in the BooksList component.
+In this milestone, I connected the Remove_Book action to the redux store.
+I implemented redux actions to handle creating new books and removing books from the application. Remove Book button is now displayed next to each book row in the BooksList component.
 
 ### Milestone 4
 In this milestone, I implemented the following;
@@ -18,9 +18,29 @@ In this milestone, I implemented the following;
 - Implemented the CategoryFilter component
 - Implemented processes to keep the filter value in the redux store.
 
-## Preview
+### Milestone 5
+In this milestone, I have implemented the UI design of the project using the specific design provided for it. At this time, everything about the frontend design and feature implementation of this project is complete. 
 
-## Features
+## Preview
+![image](images/bookstore-1.png)
+![image](images/bookstore.png)
+
+## Main Features
+- User can add a new book
+- User can remove a book
+- User can filter books based on category.
+
+### Milestone 5
+In this milestone, I have implemented the ui design of the project using the specific design provided for it. At this time, everything about the frontend design and feature implementation of this project is complete. 
+
+## Preview
+![image](images/bookstore-1.png)
+![image](images/bookstore.png)
+
+## Main Features
+- User can add new book
+- User can remove book
+- User can filter books based on category.
 
 ## Project SetUp
 Get a local copy of the file. Clone with HTTPS following the steps below.
