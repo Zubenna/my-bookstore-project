@@ -14,11 +14,10 @@
 
 .input-box {
   position: absolute;
-  margin-top: 19px;
+  margin-top: 7rem;
   left: 100px;
   display: flex;
   height: 45px;
-  margin-top: 7rem;
 }
 
 #inputTitle {
