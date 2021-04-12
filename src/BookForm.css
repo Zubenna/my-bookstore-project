@@ -4,8 +4,8 @@
 
 .add-head {
   position: absolute;
-  left: 13rem;
-  top: 0;
+  left: 100px;
+  margin-top: 71px;
   font-size: 20px;
   letter-spacing: -0.18px;
   color: #888;
@@ -14,34 +14,40 @@
 
 .input-box {
   position: absolute;
-  left: 13rem;
+  margin-top: 7rem;
+  left: 100px;
   display: flex;
-  top: 5rem;
-  margin-bottom: 5rem;
+  height: 45px;
 }
 
 #inputTitle {
   height: 45px;
-  width: 450px;
+  width: 664px;
   font-size: 1.1rem;
   padding-left: 1rem;
   outline: none;
 }
 
 #selectOpt {
-  margin-left: 3rem;
+  position: absolute;
+  width: 285px;
+  height: 45px;
+  left: 49rem;
   padding: 0.6rem;
   font-size: 1.1rem;
   outline: none;
 }
 
 #add-book {
-  margin-left: 2.4rem;
+  left: 67.6rem;
   width: 184px;
+  height: 45px;
   outline: none;
   font-size: 1rem;
   background-color: #0290ff;
   border-radius: 3px;
   color: #fff;
   cursor: pointer;
+  position: absolute;
+  margin-left: 34px;
 }

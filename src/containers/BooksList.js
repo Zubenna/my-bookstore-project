@@ -25,9 +25,11 @@ const BooksList = (props) => {
     <div>
       <div className="app-title">
         <span>Bookstore CMS</span>
-        <p className="books">BOOKS</p>
-        <p className="catego">CATEGORIES</p>
-        <img src={login} alt="User Login Icon" />
+        <span className="books">BOOKS</span>
+        <span className="catego">CATEGORIES</span>
+        <div className="login-img">
+          <img src={login} alt="User Login Icon" />
+        </div>
       </div>
       {filteredBooks.map(
         (book) => <Book key={book.id} book={book} removeBtn={handleRemoveBook} />,
